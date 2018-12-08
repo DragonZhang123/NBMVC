@@ -85,11 +85,18 @@ public class Array<E> {
      * @param index
      * @return
      */
-    E get(int index){
+    public E get(int index){
         if(index < 0 ||index >= size){
             throw new IllegalArgumentException("Get failed. The index is illegal!");
         }
         return data[index];
+    }
+
+    public E getFirst(){
+        return get(0);
+    }
+    public E getLast(){
+        return get(size-1);
     }
 
     /**
@@ -97,7 +104,7 @@ public class Array<E> {
      * @param index
      * @param e
      */
-    void set(int index,E e){
+    public void set(int index,E e){
         if(index < 0 ||index >= size){
             throw new IllegalArgumentException("Set failed. The index is illegal!");
         }
