@@ -1,3 +1,5 @@
+package datastructure;
+
 public class ArrayQueue<E> implements Queue<E> {
     Array<E> array;
 
@@ -38,7 +40,7 @@ public class ArrayQueue<E> implements Queue<E> {
     @Override
     public String toString() {
         StringBuilder rs = new StringBuilder();
-        rs.append(String.format("Queue:"));
+        rs.append(String.format("datastructure.Queue:"));
         rs.append("front [");
         for (int i = 0; i < array.getSize(); i++) {
             rs.append(array.get(i));

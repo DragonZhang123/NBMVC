@@ -1,3 +1,5 @@
+package datastructure;
+
 public interface Queue<E> {
     int getSize();
     boolean isEmpty();

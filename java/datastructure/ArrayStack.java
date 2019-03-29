@@ -1,3 +1,5 @@
+package datastructure;
+
 public class ArrayStack<E> implements Stack<E> {
 
     Array<E> array;
@@ -39,7 +41,7 @@ public class ArrayStack<E> implements Stack<E> {
     @Override
     public String toString() {
         StringBuilder rs = new StringBuilder();
-        rs.append(String.format("Stack:"));
+        rs.append(String.format("datastructure.Stack:"));
         rs.append("[");
         for (int i = 0; i < array.getSize(); i++) {
             rs.append(array.get(i));

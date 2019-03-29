@@ -1,3 +1,5 @@
+package datastructure;
+
 public class Student {
     private String name;
     private int score;
@@ -9,7 +11,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "datastructure.Student{" +
                 "name='" + name + '\'' +
                 ", score=" + score +
                 '}';

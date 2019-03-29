@@ -1,4 +1,4 @@
-
+package datastructure;
 
 public class LoopQueue<E> implements Queue<E> {
     private E[] data;
@@ -79,7 +79,7 @@ public class LoopQueue<E> implements Queue<E> {
     @Override
     public String toString() {
         StringBuilder rs = new StringBuilder();
-        rs.append(String.format("Queue:size %d ,capacity = %d \n",size,getCapacity()));
+        rs.append(String.format("datastructure.Queue:size %d ,capacity = %d \n",size,getCapacity()));
         rs.append("front [");
         for (int i = front; i !=tail; i=(i+1)%data.length) {
             rs.append(data[i]);

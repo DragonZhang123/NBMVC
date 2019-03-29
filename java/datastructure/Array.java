@@ -1,3 +1,7 @@
+package datastructure;
+
+import javax.xml.ws.WebFault;
+
 public class Array<E> {
     private E[] data;
     private int size;
@@ -176,7 +180,7 @@ public class Array<E> {
     @Override
     public String toString() {
         StringBuilder rs = new StringBuilder();
-        rs.append(String.format("Array:size %d ,capacity = %d \n",size,data.length));
+        rs.append(String.format("datastructure.Array:size %d ,capacity = %d \n",size,data.length));
         rs.append("[");
         for (int i = 0; i < size; i++) {
             rs.append(data[i]);
