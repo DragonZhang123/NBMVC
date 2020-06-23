@@ -132,4 +132,24 @@ public class Linkedlist<E> {
         res.append("NULL");
         return res.toString();
     }
+
+    /**
+     * 链表删除
+     * @param index
+     * @return
+     */
+    public E remove(int index){
+        if(index < 0|| index > size){
+            throw new IllegalArgumentException("Set fail.Illegal index.");
+        }
+        Node prev =dummyHead;
+        for (int i = 0; i < index; i++) {
+            prev =prev.next;
+        }
+        Node retNode =prev.next;
+        prev.next =retNode.next;
+        retNode.next =null;
+        size--;
+        return retNode.e;
+    }
 }
